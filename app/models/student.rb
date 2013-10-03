@@ -1,7 +1,7 @@
 require_relative '../../db/config'
 
 class Student < ActiveRecord::Base
-  has_many :teacher
+  has_and_belongs_to_many :teachers
 
   validates :email, :format => { :with => /.+@.+\..{2,}/}
   validates :email, :uniqueness => true

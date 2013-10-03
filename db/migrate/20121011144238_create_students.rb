@@ -11,7 +11,6 @@ class CreateStudents < ActiveRecord::Migration
       t.string :email
       t.string :phone
       t.date :birthday
-      t.belongs_to :teacher
       t.datetime :created_at
       t.datetime :updated_at
     end
